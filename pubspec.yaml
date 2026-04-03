@@ -1,0 +1,52 @@
+name: fera_ai_assistant
+description: Fera AI Assistant — voice-first Android app supporting 22 Indian languages.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Networking
+  http: ^1.2.1
+  dio: ^5.4.3+1
+
+  # Speech-to-Text
+  speech_to_text: ^6.6.2
+
+  # Text-to-Speech
+  flutter_tts: ^4.0.2
+
+  # App/URL launching (open YouTube, etc.)
+  url_launcher: ^6.2.5
+
+  # Local storage for chat history & settings
+  shared_preferences: ^2.2.3
+
+  # UI helpers
+  flutter_chat_ui: ^1.6.15
+  intl: ^0.19.0
+
+  # Markdown rendering for AI responses
+  flutter_markdown: ^0.6.22
+
+  # Permission handling
+  permission_handler: ^11.3.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
